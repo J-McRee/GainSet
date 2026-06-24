@@ -1,0 +1,32 @@
+{
+  "name": "gainset-server",
+  "version": "1.0.0",
+  "description": "Gainset backend — Node.js + Express + Drizzle ORM",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node src/db/migrate.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10"
+  },
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.1": true,
+    "better-sqlite3@12.11.1": true,
+    "fsevents@2.3.3": true
+  }
+}
